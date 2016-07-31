@@ -1,3 +1,35 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1280px;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+    .wrapper {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 728px) and (max-width: 960px) {
+    .wrapper {
+        width: 728px;
+    }
+}
+
+@media screen and (max-width: 728px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
 #top-header {
     align-content: center;
     background-color: #fffff0;
@@ -6,13 +38,10 @@
 
 #navigation {
     color: white;
-    width: 60%;
     background-color: #EA3833;
     border: 1px solid #EA3833;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    margin-left: 19%;
-    margin-right: 19%;
 }
 
 #top-header li {
@@ -26,12 +55,5 @@
     margin-bottom: 20px;
 }
 #bottom-header{
-    width: 60%;
-    margin-left: 19%;
-    margin-right: 19%;
     background-image: url("house-roof.jpg");
-}
-#logo{
-    width: 50%;
-    height: auto;
 }
