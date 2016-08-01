@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <title>Ремонт на Покриви "Мира Строй ЕООД"</title>
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 
 <body>
@@ -16,10 +17,10 @@
             <div class="wrapper">
                 <nav id="navigation">
                     <ul>
-                        <li>Начало</li>
-                        <li>За Нас</li>
-                        <li>Проекти</li>
-                        <li>Контакти</li>
+                        <li><a href="index.html">Начало</a></li>
+                        <li><a href="index.html">За Нас</a></li>
+                        <li><a href="index.html">Проекти</a></li>
+                        <li><a href="index.html">Контакти</a></li>
                     </ul>
                 </nav>
             </div>
@@ -27,36 +28,51 @@
 
 
         <div id="bottom-header">
-            <div class="wrapper" id="toGray">
-                <div id="main">
-                    <img id="logo" src="Resources/logo.png" />
+            <div class="wrapper" id="homepage-box">
+                <img class="logo" src="Resources/logo.png" />
+                <div class="transition" id="main">
                     <h1>Фирма "Мира СТРОЙ ЕООД"</h1>
-                    <h2>Извършва покривни и вътрешни ремонтни дейности</h2>
+                    <h2>Извършва покривни и вътрешни ремонти</h2>
                     <a href="info.html">
                         <input class="button" type="button" value="Информация за нас">
                     </a>
                 </div>
+                <div class="transition" id="secondary">
+                    <h1>Работна бригада за вашата фирма</h1>
+                    <h2>Фирма "Мира СТРОЙ ЕООД" може да работи и като бригада</h2>
+                    <a href="team.html">
+                        <input class="button" type="button" value="Нашият екип">
+                    </a>
+                </div>
+
             </div>
         </div>
     </header>
     <section>
         <div class="wrapper">
-            <div id="info">
+            <div class="info">
                 <h1 id="info-header">
-                    Добре дошли!
+                    Ремонтирайте своя покрив сега!
                 </h1>
                 <article>
                     <p>
-                        Строителна фирма "Мира СТРОЙ ЕООД" извършва ремонтна дейност спрямо вашите нужди. <br> Тук ще намерите всичко за ремонта на вашият дом, офис или заведение и поддръжка към тях.<br>
+                        Строителна фирма "Мира СТРОЙ ЕООД" извършва ремонтна дейност спрямо вашите нужди.
+                        <br> Тук ще намерите всичко за ремонта на вашият дом, офис или заведение и поддръжка към тях.
+                        <br>
                     </p>
                     <p>
-                        Екипът ни се състои от квалифицирани специалисти в бранша, с многогодишен опит.<br> За огледи и консултации с удоволствие ще отговорим на вашите запитвания.<br> Ще изготвим конкретна оферта за вашите нужди и ще изпълнип задачата
-                        качествено и прецизно.
+                        Екипът ни се състои от квалифицирани специалисти в бранша, с многогодишен опит.
+                        <br> За огледи и консултации с удоволствие ще отговорим на вашите запитвания.
+                        <br> Ще изготвим конкретна оферта за вашите нужди и ще изпълнип задачата качествено и прецизно.
                     </p>
                 </article>
             </div>
+            <div class="info">
+                <img src="" alt="">
+            </div>
         </div>
     </section>
+
     <footer>
         <div class="wrapper">
             <div class="footer-info">

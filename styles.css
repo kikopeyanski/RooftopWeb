@@ -4,7 +4,9 @@ body {
 }
 
 .wrapper {
-    margin:   0 auto;
+    margin: 0 auto;
+    text-decoration: none;
+    position: relative;
 }
 
 #top-header {
@@ -20,29 +22,62 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+#navigation a{
+    text-decoration: none;
+    border: 1px solid #EA3833;
+    border-radius: 5px;
+}
 
 #top-header li {
     display: inline;
-    padding: 20px;
+    margin: 20px;
+    text-decoration: none;
 }
+a:link, a:visited, a:active {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+.transition a{
+    padding: 0;
+}
+#navigation a:hover{
+    color: black;
+    background-color:  white;
+}
+
 
 #top-header ul {
     padding: 20px;
     padding-bottom: 0px;
     margin-bottom: 20px;
 }
-#toGray{
+
+#homepage-box {
     background-color: gray;
     background-image: url("Resources/house-roof.jpg");
 }
-#bottom-header{
+
+#bottom-header {
     background-color: #F1F1F1;
 }
 
 #main {
+    display: block;
     padding: 50px;
     color: white;
     text-shadow: 1px 1px black;
+}
+
+#secondary {
+    display: none;
+    padding: 50px;
+    color: white;
+    text-shadow: 1px 1px black;
+    text-align: right;
+}
+.info{
+    display: inline-block;
 }
 
 p {
@@ -76,10 +111,9 @@ footer .wrapper {
 
 .button {
     background-color: red;
-    padding: 0;
     border: 1px solid red;
     border-radius: 5px;
-    padding: 1%;
+    padding: 2%;
     color: white
 }
 
@@ -88,11 +122,28 @@ footer .wrapper {
     width: 49%;
 }
 
+.logo {
+    position: absolute;
+    top:50px;
+    left: 50px;
+}
+
+.transition {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    
+}
+
 @media screen and (min-width: 1280px) {
     .wrapper {
         width: 1280px;
         height: auto;
         background-size: 1280px auto;
+    }
+    #homepage-box {
+        width: 1280px;
+        height: 520px;
     }
 }
 
@@ -102,6 +153,10 @@ footer .wrapper {
         height: auto;
         background-size: 960px auto;
     }
+    #homepage-box {
+        width: 960;
+        height: 400px;
+    }
 }
 
 @media screen and (min-width: 728px) and (max-width: 960px) {
@@ -110,6 +165,10 @@ footer .wrapper {
         height: auto;
         background-size: 728px auto;
     }
+    #homepage-box {
+        width: 728px;
+        height: 270px;
+    }
 }
 
 @media screen and (max-width: 728px) {
@@ -117,5 +176,9 @@ footer .wrapper {
         width: 100%;
         height: auto;
         background-size: 100% auto;
+    }
+    #homepage-box {
+        width: 480px;
+        height: 200px;
     }
 }
