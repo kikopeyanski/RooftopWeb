@@ -78,12 +78,24 @@ body {
     text-shadow: 1px 1px black;
     text-align: right;
 }
+
 .info{
     display: inline-block;
 }
 
-p {
-    margin-top: 2%;
+.home-info h1 {
+	font-size: 34px;
+	font-weight: 600;
+	color: #333;
+	margin: 55px 0 0px 50px;
+}
+
+.home-info p {
+	margin: 21px 0 0 50px;
+}
+
+.home-info p:last-of-type {
+	margin-bottom: 55px;
 }
 
 footer {
