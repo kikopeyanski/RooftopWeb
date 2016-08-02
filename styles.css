@@ -16,7 +16,7 @@ body {
 }
 
 #navigation {
-    color: white;
+    color: #fff;
     background-color: #EA3833;
     border: 1px solid #EA3833;
     border-top-left-radius: 10px;
@@ -26,6 +26,9 @@ body {
     text-decoration: none;
     border: 1px solid #EA3833;
     border-radius: 5px;
+    transition: 0.2s all;
+    -webkit-transition: 0.2s all;
+    -moz-transition: 0.2s all;
 }
 
 #top-header li {
@@ -42,8 +45,13 @@ a:link, a:visited, a:active {
     padding: 0;
 }
 #navigation a:hover{
-    color: black;
-    background-color:  white;
+    color: #333;
+    background-color:  #fff;
+}
+
+.active a{
+	color: #333;
+	background-color: #fff;
 }
 
 
@@ -122,6 +130,35 @@ footer .wrapper {
     width: 49%;
 }
 
+.activities h2 {
+	font-size: 21px;
+	color: #333;
+	margin: 34px 0;
+	font-weight: 400;
+}
+
+article h3 {
+	font-size: 21px;
+	color: #333;
+	margin: 34px 0 34px 40px;
+	font-weight: 400;
+}
+
+article h3:last-of-type {
+	margin-top: -7px;
+	margin-bottom: 55px;
+}
+
+.activities li {
+	color: #EA3833;
+	margin: 0 0 8px 16px;
+}
+
+.activities li p {
+	color: #333;
+	margin: 0;
+}
+
 .logo {
     position: absolute;
     top:50px;
@@ -181,4 +218,10 @@ footer .wrapper {
         width: 480px;
         height: 200px;
     }
+}
+
+.bhHeadline {
+	font-size: 27px;
+	color: #333;
+	padding: 27px 0 27px 40px;
 }
