@@ -125,11 +125,6 @@ footer .wrapper {
     color: white
 }
 
-.activities {
-    display: inline-block;
-    width: 49%;
-}
-
 .activities h2 {
 	font-size: 21px;
 	color: #333;
@@ -222,6 +217,8 @@ article h3:last-of-type {
 
 .bhHeadline {
 	font-size: 27px;
+	font-weight: 400;
 	color: #333;
 	padding: 27px 0 27px 40px;
+	margin: 0;
 }
