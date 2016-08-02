@@ -22,6 +22,7 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
 #navigation a{
     text-decoration: none;
     border: 1px solid #EA3833;
@@ -36,14 +37,17 @@ body {
     margin: 20px;
     text-decoration: none;
 }
+
 #top-header a:link, a:visited, a:active {
     color: white;
     padding: 15px;
     text-decoration: none;
 }
+
 .transition a{
     padding: 0;
 }
+
 #navigation a:hover{
     color: #333;
     background-color:  #fff;
@@ -148,6 +152,14 @@ footer p {
     color: white
 }
 
+.bhHeadline {
+	font-size: 27px;
+	font-weight: 400;
+	color: #333;
+	padding: 27px 0 27px 40px;
+	margin: 0;
+}
+
 .activities h2 {
 	font-size: 21px;
 	color: #333;
@@ -236,12 +248,4 @@ article h3:last-of-type {
         width: 480px;
         height: 200px;
     }
-}
-
-.bhHeadline {
-	font-size: 27px;
-	font-weight: 400;
-	color: #333;
-	padding: 27px 0 27px 40px;
-	margin: 0;
 }
