@@ -136,6 +136,10 @@ footer ul h3 {
     margin-bottom: 10px;
 }
 
+footer p {
+	margin: 0 0 0 50px;
+}
+
 .button {
     background-color: red;
     border: 1px solid red;
