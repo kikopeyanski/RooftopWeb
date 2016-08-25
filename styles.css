@@ -23,7 +23,7 @@ body {
     border-top-right-radius: 10px;
 }
 
-#navigation a{
+#navigation a {
     text-decoration: none;
     border: 1px solid #EA3833;
     border-radius: 5px;
@@ -44,13 +44,13 @@ body {
     text-decoration: none;
 }
 
-.transition a{
+.transition a {
     padding: 0;
 }
 
-#navigation a:hover{
+#navigation a:hover {
     color: #333;
-    background-color:  #fff;
+    background-color: #fff;
 }
 
 #top-header ul {
@@ -68,6 +68,12 @@ body {
     background-color: #F1F1F1;
 }
 
+.about-us {
+    margin: 0px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid red;
+}
+
 #main {
     display: block;
     padding: 50px;
@@ -83,23 +89,67 @@ body {
     text-align: right;
 }
 
-.info{
-    display: inline-block;
+
+#info-header {
+    background-color: #F1F1F1;
+    padding-bottom: 50px;
 }
 
 .home-info h1 {
-	font-size: 34px;
-	font-weight: 600;
-	color: #333;
-	margin: 55px 0 0px 50px;
+    font-size: 34px;
+    font-weight: 600;
+    color: #333;
+    margin: 55px 0 0px 50px;
+
+}
+#left-info{
+    display: inline-block;
+    width: 65%;
+    margin-bottom: 20px;
+    padding-right: 5px;
+}
+#contacts-info{
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.contacts{
+    font-size: 36px;
+    font-weight: 400;
+    color: #333;
+    padding: 27px 0 0px 10px;
+    margin: 0;
+}
+.info {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    padding-left:20px;
+}
+.contacts-info-description{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom:1px solid red;
+
+}
+.info h1{
+    font-size: 34px;
+    font-weight: 600;
+    color: #333;
+    margin: 55px 0 0px 50px;
+}
+
+#info-roof-img {
+    width: auto;
+    height: auto;
 }
 
 .home-info p {
-	margin: 21px 0 0 50px;
+    margin: 21px 0 0 50px;
 }
 
 .home-info p:last-of-type {
-	margin-bottom: 55px;
+    margin-bottom: 55px;
 }
 
 footer {
@@ -113,25 +163,25 @@ footer ul {
 }
 
 footer ul li {
-	margin: 0 0 10px 0;
+    margin: 0 0 10px 0;
 }
 
 footer li a {
-	text-decoration: none;
-	font-size: 14px;
-	display: inline-block;
-	font-weight: 400;
-	color: #fff;
-	
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+
 }
 
 footer li a:hover {
-	color: #fff;
-	text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 footer li:last-of-type {
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 footer ul h3 {
@@ -142,7 +192,7 @@ footer ul h3 {
 }
 
 footer p {
-	margin: 0 0 0 50px;
+    margin: 0 0 0 50px;
 }
 
 .button {
@@ -154,45 +204,58 @@ footer p {
 }
 
 .bhHeadline {
-	font-size: 27px;
-	font-weight: 400;
-	color: #333;
-	padding: 27px 0 27px 40px;
-	margin: 0;
+    font-size: 27px;
+    font-weight: 400;
+    color: #333;
+    padding: 27px 0 27px 40px;
+    margin: 0;
+}
+#about-us-text{
+    padding-left: 10px;
+    font-size:36px;
 }
 
 .activities h2 {
-	font-size: 21px;
-	color: #333;
-	margin: 34px 0;
-	font-weight: 400;
+    font-size: 21px;
+    color: #333;
+    margin: 34px 0;
+    font-weight: 400;
+}
+#description-activities{
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    padding: 27px 0 27px 40px;
+    margin: 0;
+    margin-top:50px;
+    border-top:1px solid red;
 }
 
 article h3 {
-	font-size: 21px;
-	color: #333;
-	margin: 34px 0 34px 40px;
-	font-weight: 400;
+    font-size: 21px;
+    color: #333;
+    margin: 34px 0 34px 40px;
+    font-weight: 400;
 }
 
 article h3:last-of-type {
-	margin-top: -7px;
-	margin-bottom: 55px;
+    margin-top: -7px;
+    margin-bottom: 55px;
 }
 
 .activities li {
-	color: #EA3833;
-	margin: 0 0 8px 16px;
+    color: #EA3833;
+    margin: 0 0 8px 16px;
 }
 
 .activities li p {
-	color: #333;
-	margin: 0;
+    color: #333;
+    margin: 0;
 }
 
 .logo {
     position: absolute;
-    top:50px;
+    top: 50px;
     left: 50px;
 }
 
@@ -200,7 +263,7 @@ article h3:last-of-type {
     width: 100%;
     position: absolute;
     bottom: 0px;
-    
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -209,6 +272,7 @@ article h3:last-of-type {
         height: auto;
         background-size: 1280px auto;
     }
+
     #homepage-box {
         width: 1280px;
         height: 520px;
@@ -221,8 +285,9 @@ article h3:last-of-type {
         height: auto;
         background-size: 960px auto;
     }
+
     #homepage-box {
-        width: 960;
+        width: 960px;
         height: 400px;
     }
 }
@@ -233,6 +298,7 @@ article h3:last-of-type {
         height: auto;
         background-size: 728px auto;
     }
+
     #homepage-box {
         width: 728px;
         height: 270px;
@@ -245,6 +311,7 @@ article h3:last-of-type {
         height: auto;
         background-size: 100% auto;
     }
+
     #homepage-box {
         width: 480px;
         height: 200px;
@@ -252,61 +319,61 @@ article h3:last-of-type {
 }
 
 .contactForm input {
-	border: none;
-	display: block;
-	margin: 0 0 21px 36px;
-	background-color: #eee;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	color: #333;
-	font-size: 14px;
-	padding: 14px;
-	width: 100%;
-	outline: none;
-	-webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.15);
-	-moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.15);
-	box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.15);
+    border: none;
+    display: block;
+    margin: 0 0 21px 36px;
+    background-color: #eee;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #333;
+    font-size: 14px;
+    padding: 14px;
+    width: 100%;
+    outline: none;
+    -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 .contactForm input:last-of-type {
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .contactForm textarea {
-	border: none;
-	display: block;
-	margin: 0 0 21px 36px;
-	background-color: #eee;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	color: #333;
-	font-size: 14px;
-	padding: 14px;
-	width: 100%;
-	outline: none;
-	height: 150px;
-	-webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.15);
-	-moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.15);
-	box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.15);
-	resize: none;
+    border: none;
+    display: block;
+    margin: 0 0 21px 36px;
+    background-color: #eee;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #333;
+    font-size: 14px;
+    padding: 14px;
+    width: 100%;
+    outline: none;
+    height: 150px;
+    -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.15);
+    resize: none;
 }
 
 .contactForm form {
-	margin: 55px 0;
+    margin: 55px 0;
 }
 
 .contactForm input[type="submit"] {
-	background-color: #EA3833;
-	box-shadow: none;
-	width: 100px;
-	color: #fff;
-	transition: 0.2s all;
-	-webkit-transition: 0.2s all;
-	-moz-transition: 0.2s all;
+    background-color: #EA3833;
+    box-shadow: none;
+    width: 100px;
+    color: #fff;
+    transition: 0.2s all;
+    -webkit-transition: 0.2s all;
+    -moz-transition: 0.2s all;
 }
 
 .contactForm input[type="submit"]:hover {
-	opacity: 0.9;
+    opacity: 0.9;
 }
